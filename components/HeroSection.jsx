@@ -10,8 +10,8 @@ export default function HeroSection() {
   return (
     <main>
       <div className="max-w-6xl mx-auto">
-        <div className="flex flex-col-reverse justify-between items-center pt-24">
-          <div className="w-full lg:w-1/2 py-14 lg:py-10 px-5 text-center">
+        <div className="flex flex-col-reverse justify-between items-center pt-24 lg:pb-24 lg:flex-row">
+          <div className="w-full lg:w-1/2 py-14 lg:py-10 px-5 text-center lg:text-start">
             <h1 className="text-4xl lg:text-5xl font-bold">Make remote work</h1>
             <p className="text-secondary my-5">
               Get your team sync, no matter your location. Streamline processes,
@@ -37,7 +37,11 @@ export default function HeroSection() {
               alt="hero"
               className="hidden lg:block w-9/12 mx-auto"
             />
-            <img src="/images/image-hero-mobile.png" alt="hero" />
+            <img
+              src="/images/image-hero-mobile.png"
+              alt="hero"
+              className="lg:hidden"
+            />
           </div>
         </div>
       </div>
