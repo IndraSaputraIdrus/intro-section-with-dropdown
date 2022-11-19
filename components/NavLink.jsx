@@ -10,7 +10,7 @@ export default function NavLink(props) {
     }
   };
   return (
-    <li className="cursor-pointer">
+    <li className="cursor-pointer relative">
       <div
         className="hover:text-slate-900 flex items-center"
         onClick={() => setOpen(!open)}

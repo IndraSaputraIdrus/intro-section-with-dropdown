@@ -37,12 +37,12 @@ export default function Navbar() {
             <ul className="space-y-5 font-bold items-center lg:space-x-7 lg:space-y-0 text-secondary lg:flex">
               {navLinks.map((link) => (
                 <NavLink key={link.id} {...link}>
-                  <ul className="px-5 my-8 space-y-5">
+                  <ul className="px-5 my-8 space-y-5 lg:absolute lg:bg-white lg:shadow-2xl lg:p-8 right-0 top-5 lg:rounded-xl lg:whitespace-nowrap">
                     {link.dropdown &&
                       link.dropdown.map((item) => (
                         <li
                           key={item.text}
-                          className="flex items-center justify-start text-sm"
+                          className="flex items-center lg:justify-between text-sm"
                         >
                           <DropdownItem {...item} />
                         </li>
